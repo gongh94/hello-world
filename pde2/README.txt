@@ -1,0 +1,1 @@
+theta_method is the main method, which needs users to input a paramter, theta, to determine which scheme will be used.
