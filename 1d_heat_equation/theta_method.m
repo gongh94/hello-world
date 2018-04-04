@@ -44,7 +44,7 @@ store_(:,1) = exact_u(x,t);
     
 for j = 1:N
     t = k * j; % stop at time k*N
-    ave_f = (1-theta)*hf(x, t+k) + theta*hf(x,t);
+    ave_f = (1-theta)*hf(x, t+k) + theta*hf(x,t); % weighted average of f value
     u = M1_inv * (ave_f - M2 * u);
     
     store(:,j+1) = u;
